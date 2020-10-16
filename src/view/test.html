@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Text</title>
+        <style>
+            
+            html,body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.btn{
+    border:none;
+    padding:.7rem 3rem;
+    display: inline-block;
+    border-radius:5px;
+    color:white;
+    transition: .3s ease-out;
+    cursor:pointer;
+    font-size:.9rem;
+}
+
+.btn-green{
+    background: rgba(40, 167, 20 ,1);
+
+}
+
+.btn-green:hover{
+    background: rgba(40, 167, 20 ,.6);
+}
+
+.btn-blue{
+    background: rgba(9, 182, 252,1);
+
+}
+
+.btn-blue:hover{
+    background: rgba(9, 182, 252,.6);
+}
+.btn-red{
+    background: rgba(252, 9, 42,1);
+
+}
+
+.btn-red:hover{
+    background: rgba(252, 9, 42,.6);
+}
+.btn-form{
+    width: 60%;
+    text-align:center;
+}
+
+.form{
+    width: 60%;
+    margin: auto;
+    /* position:relative; */
+    padding:3rem;
+    background:rgba(0, 0, 0, .1);
+    /* transform: translateY(-25%); */
+    border:1px solid black;
+    box-sizing: border-box;
+}
+
+.form-group{
+    width: 90%;
+
+    margin: 3rem auto;
+}
+.error{
+    color:red;
+    font-weight:bold;
+    padding:0;
+}
+
+.form-input{
+    width: 95%;
+    padding:1rem ;
+    margin-top:.5rem;
+    border:none;
+    border-radius :10px;
+}
+
+.navbar{
+   width: 100%;
+   background: rgba(9,9,9,.7);
+   margin:0;
+}
+.nav{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+    text-align:right;
+}
+.nav-item{
+    display: inline-block;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+
+li .nav-link{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color:white;
+    font-size: .9rem;
+    transition: .4s ease;
+}
+.active{
+    background :rgba(252, 255, 255,.6);
+    color:black !important;
+}
+
+.card{
+    width: 80%;
+    box-shadow: 1px 1px 12px #555;
+    padding: 1rem;
+    margin :3rem auto;
+    font-size:1.1em;
+}
+.card p{
+    text-align:center;
+}
+.card p a{
+    margin :2rem 1rem;
+}
+
+
+
+
+
+       
+        </style>
+    </head>
+    <body>
+        <!-- <nav class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href='.$this->router->rootUrl().'> Acceuil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='.$this->router->getChansonList().'> Liste des chansons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='.$this->router->getChansonCreationUrl().'> Ajout chanson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='.$this->router->getConnexionURL().'>connexion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='.$this->router->getDeconnexionURL().'>inscription</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+
+            <div class="card">
+                 est un chanson produite par  $chanson->getArtiste()Cette 
+                chanson fait partie de son album chanson->getAlbum()
+                 est sortie officiellement en l\'an $chanson->getAnnee()Cette chanson est du registre 
+                $chanson->getStyle();
+                <p>
+                    <a href="$this->router->getchansonAskDeletionUrl($id)" class="link">Supprimer la chanson </a>
+                    <a href="$this->router->getchansonAskUpdateURL($id)" class="link">modifier  la chanson </a> 
+                </p>          
+        
+            </div>
+
+
+
+            <form method="POST"  class="form" action="#">
+                <div class="form-group">
+                    <p class="error"> $nomError </p>
+                    <label>Nom<input  type="text" class="form-input" name="$car::NAME_REF"  value="$nomValue"></label>
+                <div>
+                <div class="">
+                    <p class="error"> $especeError </p>
+                    <label>especr<input type="text" name="$car::SPECIES_REF" placeholder="entrer son espéce" value="  $especeValue"></label>
+                <div>
+                <div class="">
+                <p> $ageError </p>
+                    <label>age<input type="text" name="$car::AGE_REF" placeholder="entrer son age" value="  $ageValue"></label>
+                <div>
+                <div >
+                    <button type="submit" class="btn btn-green">Modifier</button>
+                </div>
+            </form>     -->
+
+            <section class="presentation m-auto">
+                <h3> Numero etudiant des membres du groupe</h3>
+                <p>
+                    Nous etions deux étudiant à relialiser ce projet les
+                    <ul>
+                        <li>Etudiant N°1 <em>21913373</em></li>
+                        <li>Etudiant N°1 <em>21913373</em></li>
+                    </ul>
+                    <h3>Sous la SuperVision de Mr <strong>Alexandre NIVEAU</strong></h3>
+                </p>
+            </section>
+         <div class="flex">
+                
+                    <section class="presentation">
+                        <h3> But</h3>
+                        <p>
+                            Dans ce projet il nous etait demander de realiser un petit site web fait en PHP en utilisant la structure 
+                            MVCR vue en cours. Le site devais porter sur un produit listable dans notre cas nous avons utiliser 
+                            <strong>Les chansons</strong> 
+                            <ul>
+                                <h5></h5>Comme model de notre application on a:</h5>
+                                <li>Les chansons</li>
+                                <li>Les user</li>
+                            </ul>
+                            <ul>
+                                <h5></h5>Comme controller de notre application on a:</h5>
+                                <li>Les controlller qui gerer les chansons</li>
+                                <li>Les controller qui gerer les users</li>
+                            </ul>
+                            <ul>
+                                <h5></h5>Comme view de notre application on a:</h5>
+                                <li>view qui  commune à tout les utilisateur meme ce qui ne son pas connecter</li>
+                                <li>private view qui est propre à un utilisateur qui s'est connecter</li>
+                                <li>Admin view qui est reserver au utilisateur connecter et dont le status est admin</li>
+                            </ul>
+                            <h5> Nous avons egalement un routeur</h5>
+                        </p>
+                    </section>
+                    <section class="presentation">
+                        <h3> Comment l'application fonctionne</h3>
+                        <p>
+                            <h5>Pour un utilisateur non connecter</h5>
+                            Quand il arrive sur le site, il peute:
+                            <ol>
+                                <li>Consulter la liste des chansons</li>
+                                <li>S'inscrire</li>
+                                <li>Se connecter</li>
+                                <li> Voir la page a propos</li>
+                                <li>Acceder à la page d'acceuil</li>
+                            </ol>
+                            Par contre , celui sera incapable de
+                          
+                                <p>Consulter consulter,modifier, supprimer,ajouter une chanson <br /> S\'il essaie il sera renvoyé vers la page de connexion   </p>
+        
+                        </p>
+        
+        
+                        <p>
+                            <h5>Pour un utilisateur  connecter</h5>
+                            Quand il arrive sur le site, il peut:
+                            <ol>
+                                <li>Consulter la liste des chansons</li>
+                                <li>Consulter consulter,ajouter une chanson</li>
+                                <li>modifier, supprimer uniquement de modifier les chansons qu\'il à ajouter
+                                     s\'il veut effectuer ses action sur une chanson qu\'il n\'a pas inserer il sera rediriger vers l'acceuil avec un petit message  </li>
+                                <li>Se deconnecter</li>
+                                <li> Voir la page a propos</li>
+                                <li>Acceder à la page d'acceuil</li>
+                            </ol>
+                            Par contre , si celui ci est juste de statut il sera incapable de
+                            <p>Consulter consulter,modifier, supprimer,ajouter des utilisateurs <br /> S\'il essaie il sera renvoyé vers la page de connexion   </p>
+                        </p>
+                        <h5>Un admin fait tout ce qu'il veut dans le site Sauf modifier 
+                                et supprimer une chanson qui ne lui appartient pas <i>pas encore gérer</i></h5>
+                    </section>
+          
+                   
+                        
+                  
+                    <section class="presentation">
+                        <ul>
+                            <li>Les pages on été toute valider comme HTML5 conforme grace à <a href="#">validateur HTML5</a></li>
+                            <li>Base de donnée utilisée MySQL</li>
+                            <li>Un peu de CSS ajouter pour que ça ne parait pas trop moche même ci c'est toujours moche :)</li>
+                            <li></li>
+                        </ul>
+                    </section>
+                </section>
+         </div>
+    </body>
+</html>
